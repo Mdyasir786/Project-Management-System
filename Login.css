@@ -1,0 +1,152 @@
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.login-container h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+  background: #f7f7f7;
+  font-size: 16px;
+  outline: none;
+  animation: bounceIn 1s ease-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  box-shadow: 0px 0px 8px rgba(30, 144, 255, 0.8);
+}
+
+button {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #2196f3, #1e88e5);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: zoomIn 1s ease-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #1769aa;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.signup-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  animation: slideUp 1.5s ease-out;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin: 10px 0;
+  font-size: 14px;
+  animation: shake 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}

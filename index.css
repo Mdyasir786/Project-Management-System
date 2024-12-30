@@ -1,0 +1,35 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  animation: gradientBG 6s infinite alternate;
+}
+
+@keyframes gradientBG {
+  0% { background: #f5f7fa; }
+  100% { background: #c3cfe2; }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  animation: buttonPulse 2s infinite;
+}
+
+@keyframes buttonPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
