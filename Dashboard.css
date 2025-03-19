@@ -1,0 +1,65 @@
+body {
+  background-image: url('pro.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f3f3f3);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.dashboard-header {
+  font-family: "Arial", sans-serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  animation: popUp 1.5s ease-out;
+}
+
+.dashboard-button {
+  width: 80%;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(145deg, #56ab2f, #a8e063);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  animation: zoomIn 1s ease-out;
+}
+
+.dashboard-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #4caf50, #81c784);
+}
+
+.logout-button {
+  background: linear-gradient(145deg, #e53935, #f44336);
+}
+
+.logout-button:hover {
+  background: linear-gradient(145deg, #b71c1c, #d32f2f);
+}
